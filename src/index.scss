@@ -1,0 +1,546 @@
+@font-face {
+  font-family: "mainfont";
+  src: url("./fonts/Gotham-Book.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("/fonts/Gotham-Book.woff") format("woff"),
+    /* Pretty Modern Browsers */ url("./fonts/Gotham-Book.ttf")
+      format("truetype"); /* Safari, Android, iOS */
+}
+
+$primary-color: black;
+$secondary-color: rgb(61, 201, 179);
+$primary-grey: rgb(140, 147, 152);
+$darkblue: rgb(37, 40, 49);
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "mainfont", Fallback, sans-serif !important;
+}
+
+header {
+  background: url("./imgs/main.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  i {
+    position: absolute;
+    top: 5vh;
+    right: 10vh;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  h1 {
+    letter-spacing: 1rem;
+    span {
+      color: $primary-grey;
+    }
+  }
+  p {
+    color: $primary-grey;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    span {
+      font-weight: 800;
+      margin-left: 5px;
+      font-style: italic;
+    }
+  }
+}
+
+.header-main {
+  padding-top: 250px;
+}
+
+.main-btn {
+  color: white;
+  font-size: 13px;
+  background-color: $secondary-color;
+  border: none;
+  padding: 20px 40px;
+  border-radius: 5px;
+  box-shadow: 0px 15px 15px -15px #111;
+  &:focus {
+    border: none;
+    outline: none;
+  }
+}
+
+#portfolio {
+  background-color: #fafbff;
+  padding: 100px 0;
+  p.title {
+    font-size: 15px;
+    font-weight: 900;
+  }
+  .dotted-line {
+    border-bottom: 2px dotted $primary-grey;
+    width: 150px;
+  }
+  .dotted-header {
+    height: 20px;
+    i {
+      padding: 10px 20px;
+    }
+    display: flex;
+    justify-content: center;
+  }
+  p.explanation {
+    font-size: 15px;
+    max-width: 800px;
+    margin-top: 40px;
+    line-height: 2;
+    span {
+      font-weight: 800;
+    }
+  }
+}
+
+.activities {
+  padding: 100px 0;
+  background-color: white;
+  p.title {
+    font-size: 15px;
+    font-weight: 900;
+  }
+  .dotted-line {
+    border-bottom: 2px dotted $primary-grey;
+    width: 150px;
+  }
+  .dotted-header {
+    height: 20px;
+    i {
+      padding: 10px 20px;
+    }
+    display: flex;
+    justify-content: center;
+  }
+  .activity-row {
+    padding: 80px;
+    .line {
+      width: 30px;
+      border-bottom: 3px solid $secondary-color;
+      margin: auto;
+      margin-bottom: 10px;
+    }
+    .activity-icon {
+      width: 100px;
+    }
+    .title {
+      font-weight: 900;
+      padding: 20px 0;
+      margin: 0;
+    }
+  }
+}
+
+.band {
+  background: url("./imgs/bg1.jpg");
+  background-size: cover;
+  color: white;
+  padding: 80px;
+  h1 {
+    letter-spacing: 10px;
+  }
+  h3 {
+    letter-spacing: 10px;
+  }
+  i {
+    padding: 20px;
+    background-color: $secondary-color;
+    border-radius: 50%;
+    margin-top: 10px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+//Extra section styling///////////////
+.mobile {
+  padding: 60px;
+  background-color: #fafbff;
+
+  .left {
+    overflow: hidden;
+    img {
+      width: 100%;
+      transform: translateX(35%);
+    }
+  }
+}
+.carousel {
+  .carousel-indicators li {
+    width: 15px !important ;
+    height: 15px !important;
+    border-radius: 100%;
+    border: 2px solid $primary-grey !important;
+  }
+  .carousel-indicators .active {
+    background-color: $primary-grey;
+  }
+}
+.carousel-item {
+  padding: 20px;
+  margin-bottom: 40px;
+  p.title {
+    font-size: 15px;
+    font-weight: 900;
+  }
+  .dotted-line {
+    border-bottom: 2px dotted $primary-grey;
+    width: 150px;
+  }
+  .dotted-header {
+    height: 20px;
+    i {
+      padding: 10px 20px;
+    }
+    display: flex;
+    justify-content: center;
+  }
+  p.explanation {
+    font-size: 15px;
+    max-width: 800px;
+    margin-top: 40px;
+    line-height: 2;
+    span {
+      font-weight: 800;
+    }
+  }
+}
+///////////////////////////////
+.card-area {
+  padding: 70px;
+  .line {
+    width: 30px;
+    border-bottom: 3px solid $secondary-color;
+    margin: auto;
+    margin-bottom: 10px;
+  }
+  .title {
+    font-weight: 900;
+    padding: 20px 0;
+    margin: 0;
+  }
+
+  img {
+    width: 100%;
+  }
+  .img-bg-1 {
+    background: url("./imgs/card1.jpg");
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    position: relative;
+  }
+  .img-bg-2 {
+    background: url("./imgs/card2.jpg");
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+  }
+  .img-bg-3 {
+    background: url("./imgs/card3.jpg");
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+  }
+  .img-bg {
+    &:hover {
+      .viewmore {
+        visibility: visible;
+      }
+    }
+  }
+  .viewmore {
+    background-color: rgba(61, 201, 179, 0.6);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    cursor: pointer;
+  }
+  .viewmore * {
+    padding: 10px;
+  }
+}
+
+.passion {
+  background-color: $darkblue;
+  padding: 60px 0;
+
+  button {
+    color: white;
+    background-color: inherit;
+    border: 1px solid white;
+    outline: none;
+    font-size: 14px;
+    padding: 20px 40px;
+    transition: 0.2s ease;
+    cursor: pointer;
+    &:hover {
+      background-color: $secondary-color;
+    }
+    &:active {
+      outline: none;
+    }
+  }
+}
+
+.team {
+  padding: 80px 0;
+  p.title {
+    font-size: 15px;
+    font-weight: 900;
+  }
+  .dotted-line {
+    border-bottom: 2px dotted $primary-grey;
+    width: 150px;
+  }
+  .dotted-header {
+    height: 20px;
+    margin-bottom: 70px;
+    i {
+      padding: 10px 20px;
+    }
+    display: flex;
+    justify-content: center;
+  }
+  .line {
+    width: 30px;
+    border-bottom: 3px solid $secondary-color;
+    margin: auto;
+    margin-bottom: 10px;
+  }
+  .title {
+    font-weight: 900;
+    padding: 20px 0;
+    margin: 0;
+  }
+  .col-12 {
+    img {
+      width: 150px;
+    }
+  }
+  .social {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    i {
+      width: 35px;
+      height: 35px;
+      margin: 5px;
+      background-color: $darkblue;
+      display: flex;
+      align-items: center;
+      border-radius: 50%;
+      justify-content: center;
+      transition: all 0.2s ease;
+      &:hover {
+        cursor: pointer;
+        background-color: $secondary-color;
+      }
+    }
+  }
+}
+
+.mailform {
+  background-color: $darkblue;
+  color: white;
+  padding: 70px 0;
+  i {
+    padding-bottom: 20px;
+  }
+  p {
+    padding: 20px;
+  }
+  form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+  input {
+    outline: none;
+    color: white;
+    background-color: inherit;
+    border: 1px solid white;
+    height: 50px;
+    margin-right: 5px;
+    padding: 5px;
+    width: 300px;
+  }
+  button {
+    outline: none;
+    height: 50px;
+    color: white;
+    background-color: $secondary-color;
+    border: none;
+    font-family: inherit;
+    font-size: 14px;
+    width: 100px;
+    padding: 0 5px;
+    &:active {
+      outline: none;
+    }
+  }
+}
+
+.contacts {
+  background: url("./imgs/desk.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  .fa-angle-up {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(61, 201, 179, 0.8);
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(0, -50%);
+    cursor: pointer;
+  }
+  .content {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding-bottom: 75px;
+    p.title {
+      font-size: 15px;
+      color: black;
+      font-weight: 900;
+      margin-top: 40px;
+    }
+    .dotted-line {
+      border-bottom: 2px dotted $primary-grey;
+      width: 150px;
+      height: 20px;
+    }
+    .dotted-header {
+      height: 20px;
+      i {
+        padding: 10px 20px;
+        height: 20px;
+      }
+      display: flex;
+      justify-content: center;
+      padding-bottom: 70px;
+    }
+    .social {
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 60px;
+
+      i {
+        width: 35px;
+        height: 35px;
+        margin: 5px;
+        background-color: $darkblue;
+        display: flex;
+        align-items: center;
+        border-radius: 50%;
+        justify-content: center;
+        transition: all 0.2s ease;
+        &:hover {
+          cursor: pointer;
+          background-color: $secondary-color;
+        }
+      }
+    }
+  }
+  .contact-card-holder {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin: auto;
+    .contact-card {
+      width: 330px;
+      background-color: white;
+      padding: 20px 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 30px;
+      .contact-title {
+        color: $secondary-color;
+        font-weight: 800;
+        margin-top: 20px;
+      }
+      p {
+        font-size: 90%;
+        font-weight: 800;
+        color: $primary-grey;
+      }
+      .contact-mail {
+        color: black;
+      }
+    }
+  }
+}
+
+footer {
+  background-color: $darkblue;
+  font-size: 15px;
+  padding: 40px 0;
+  .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  a {
+    color: $primary-grey;
+    padding: 5px;
+    &:hover {
+      color: $secondary-color;
+      text-decoration: none;
+    }
+  }
+  span {
+    color: $primary-grey;
+  }
+  .right {
+    color: white;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .activities {
+    padding-top: 100px;
+    padding-bottom:40px;
+    .activity-row {
+      padding: 10px 10px 30px 10px;
+    }
+  }
+  .mobile {
+    padding-top: 20px;
+    .left {
+      img {
+        transform: translateX(0);
+        padding: 20px;
+        padding-bottom: 40px;
+      }
+    }
+  }
+}
